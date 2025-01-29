@@ -24,9 +24,9 @@ var txt = [
   "MCP/> DEPLOY CLU",
   "SCAN: __ Found [Discord] 1 = ******* ",
   "SCAN: __ Found [Kirka] 1 = [paywall]",
-  "SCAN: __ 0001.0000.0554.0550",
+  "SCAN: __ Found = [SKIN_2422_||124_unique]",
   "SCAN: __ 0012.0000.0553.0030",
-  "SCAN: __ 0100.0000.0554.0080",
+  "SCAN: __ Send = (I have been Hacked L)",
   "SCAN: __ 0020.0000.0553.0080",
 ]
 
@@ -48,3 +48,61 @@ function updateScreen() {
   c.appendChild(docfrag);
 }
 </script>
+<style>
+  body {
+  margin: 0;
+  padding: 5vh 5vw;
+  background: black;
+  overflow:hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 4.1vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: limegreen;
+  text-shadow: 0px 0px 10px limegreen;
+}
+
+.msg {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 5vh;
+  padding-top: 5vh;
+  background: red;
+  box-shadow: 0 0 30px red;
+  text-shadow: 0 0 20px white;
+  color: white;
+  width: 20vw;
+  height: 15vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -10vw;
+  top: 50%;
+  margin-top: -5vh;
+  text-align: center;
+  min-width: 200px;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
