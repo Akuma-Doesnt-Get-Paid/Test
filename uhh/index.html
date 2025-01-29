@@ -7,57 +7,15 @@ var c = document.getElementById("console");
 
 var txt = [
   "Hello",
-  "Hello",
-  "Hello",
-  "Hello",
-  "Hello",
-  "Hello",
-  "You May know me.",
-  "You May know me.",
-  "You May know me.",
-  "You May know me.",
-  "You May know me.",
-  "You May know me.",
   "You May know me.",
   "My name is Anthony Known as [Akuma]",
-  "My name is Anthony Known as [Akuma]",
-  "My name is Anthony Known as [Akuma]",
-  "My name is Anthony Known as [Akuma]",
-  "My name is Anthony Known as [Akuma]",
-  "My name is Anthony Known as [Akuma]",
-  "My name is Anthony Known as [Akuma]",
-  "My name is Anthony Known as [Akuma]",
-  "And i Coded This Website at 2:56... AM",
-  "And i Coded This Website at 2:56... AM",
-  "And i Coded This Website at 2:56... AM",
-  "And i Coded This Website at 2:56... AM",
-  "And i Coded This Website at 2:56... AM",
-  "And i Coded This Website at 2:56... AM",
-  "And i Coded This Website at 2:56... AM",
-  "I was going to Use This to Fuck with my Friend But that got bord fast..",
-  "I was going to Use This to Fuck with my Friend But that got bord fast..",
-  "I was going to Use This to Fuck with my Friend But that got bord fast..",
-  "I was going to Use This to Fuck with my Friend But that got bord fast..",
-  "I was going to Use This to Fuck with my Friend But that got bord fast..",
+  "I was going to Use This to Fuck with my Friend But i got bord fast..",
 ]
 
 var docfrag = document.createDocumentFragment();
 
 function updateScreen() {
-  //Shuffle the "txt" array
-  txt.push(txt.shift());
-  //Rebuild document fragment
-  txt.forEach(function(e) {
-    var p = document.createElement("p");
-    p.textContent = e;
-    docfrag.appendChild(p);
-  });
-  //Clear DOM body
-  while (c.firstChild) {
-    c.removeChild(c.firstChild);
-  }
-  c.appendChild(docfrag);
-}
+
 </script>
 <style>
   body {
