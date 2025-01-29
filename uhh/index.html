@@ -15,7 +15,20 @@ var txt = [
 var docfrag = document.createDocumentFragment();
 
 function updateScreen() {
-
+  //Shuffle the "txt" array
+  txt.push(txt.shift());
+  //Rebuild document fragment
+  txt.forEach(function(e) {
+    var p = document.createElement("p");
+    p.textContent = e;
+    docfrag.appendChild(p);
+  });
+  //Clear DOM body
+  while (c.firstChild) {
+    c.removeChild(c.firstChild);
+  }
+  c.appendChild(docfrag);
+}
 </script>
 <style>
   body {
@@ -75,3 +88,4 @@ p {
   }
 }
 </style>
+<!-- I am bord :)-->
